@@ -76,7 +76,8 @@ int main(int argc, char *argv[])
       }
     }
   }
-
+  close(accp_sock);
+  close(listen_sock);
   return 0;
 }
 
